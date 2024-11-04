@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: br.mack.booksap.repository.AutorRespositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.297 s <<< FAILURE! -- in br.mack.booksap.repository.AutorRespositoryTest
+br.mack.booksap.repository.AutorRespositoryTest.salvarTeste -- Time elapsed: 0.319 s <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method setNome(String) is undefined for the type Autor
+	The method setNacionalidade(String) is undefined for the type Autor
+	The method setDataNascimento(LocalDate) is undefined for the type Autor
+
+	at br.mack.booksap.repository.AutorRespositoryTest.salvarTeste(AutorRespositoryTest.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
