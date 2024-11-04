@@ -13,9 +13,6 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "autor", schema = "public")
-@Getter // o lombok gera em tempo de compilação os get e sets!
-@Setter
-//@ToString(exclude = { "livros" })
 @EntityListeners(AuditingEntityListener.class) // classe usada para as auditorias (timestamps da criação / alteração)
 public class Autor {
 
@@ -47,68 +44,67 @@ public class Autor {
 	@Column(name = "idUsuario")
 	private UUID idUsuario;
 
-//	public UUID getId() {
-//		return id;
-//	}
-//
-//	public void setId(UUID id) {
-//		this.id = id;
-//	}
-//
-//	public String getNome() {
-//		return nome;
-//	}
-//
-//	public void setNome(String nome) {
-//		this.nome = nome;
-//	}
-//
-//	public LocalDate getDataNascimento() {
-//		return dataNascimento;
-//	}
-//
-//	public void setDataNascimento(LocalDate dataNascimento) {
-//		this.dataNascimento = dataNascimento;
-//	}
-//
-//	public String getNacionalidade() {
-//		return nacionalidade;
-//	}
-//
-//	public void setNacionalidade(String nacionalidade) {
-//		this.nacionalidade = nacionalidade;
-//	}
-//
-//	public LocalDateTime getDataCadastro() {
-//		return dataCadastro;
-//	}
-//
-//	public void setDataCadastro(LocalDateTime dataCadastro) {
-//		this.dataCadastro = dataCadastro;
-//	}
-//
-//	public LocalDateTime getDataAtualizacao() {
-//		return dataAtualizacao;
-//	}
-//
-//	public void setDataAtualizacao(LocalDateTime dataAtualizacao) {
-//		this.dataAtualizacao = dataAtualizacao;
-//	}
-//
-//	public UUID getIdUsuario() {
-//		return idUsuario;
-//	}
-//
-//	public void setIdUsuario(UUID idUsuario) {
-//		this.idUsuario = idUsuario;
-//	}
-//
-//	@Override
-//	public String toString() {
-//		return "Autor [id=" + id + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", nacionalidade="
-//				+ nacionalidade + ", dataCadastro=" + dataCadastro + ", dataAtualizacao=" + dataAtualizacao
-//				+ ", idUsuario=" + idUsuario + "]";
-//	}
-	
+	public UUID getId() {
+		return id;
+	}
+
+	public void setId(UUID id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public String getNacionalidade() {
+		return nacionalidade;
+	}
+
+	public void setNacionalidade(String nacionalidade) {
+		this.nacionalidade = nacionalidade;
+	}
+
+	public LocalDateTime getDataCadastro() {
+		return dataCadastro;
+	}
+
+	public void setDataCadastro(LocalDateTime dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+
+	public LocalDateTime getDataAtualizacao() {
+		return dataAtualizacao;
+	}
+
+	public void setDataAtualizacao(LocalDateTime dataAtualizacao) {
+		this.dataAtualizacao = dataAtualizacao;
+	}
+
+	public UUID getIdUsuario() {
+		return idUsuario;
+	}
+
+	public void setIdUsuario(UUID idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+
+	@Override
+	public String toString() {
+		return "Autor [id=" + id + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", nacionalidade="
+				+ nacionalidade + ", dataCadastro=" + dataCadastro + ", dataAtualizacao=" + dataAtualizacao
+				+ ", idUsuario=" + idUsuario + "]";
+	}
 	
 }

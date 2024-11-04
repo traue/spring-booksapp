@@ -1,0 +1,4 @@
+br/mack/booksap/repository/AutorRepository.class
+br/mack/booksap/config/DataSourceConfiguration.class
+br/mack/booksap/BooksapApplication.class
+br/mack/booksap/model/Autor.class

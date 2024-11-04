@@ -2,7 +2,7 @@ spring:
   application:
     name: booksapp
   datasource:
-    url: jdbc:postgresql://54.227.192.20:80/books #temos que atualizar o IP toda vez que a instância da EC2 subir!
+    url: jdbc:postgresql://18.234.34.111:80/books #temos que atualizar o IP toda vez que a instância da EC2 subir!
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
